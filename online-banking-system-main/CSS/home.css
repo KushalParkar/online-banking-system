@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 2px solid #f4f3f1;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 1000;
+}
+
+#header img {
+    height: 60px;
+    width: auto;
+    border-radius: 12px;
+}
+
+
+#log_sign {
+    display: flex;
+    margin-right: auto;
+}
+
+#log_sign a {
+    text-decoration: none;
+    color: black;
+}
+
+#log_sign a:hover {
+    text-decoration: underline;
+}
+
+.greet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+
+}
+
+.greet p {
+    color: darkblue;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#log_sign .tagline {
+    color: rgb(82, 79, 79);
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.greet b {
+    color: rgb(10, 174, 239);
+}
+
+#logout {
+    margin-left: 100vh;
+}
+
+#login {
+    margin-left: 10px;
+}
+
+
+#navbar {
+    position: fixed;
+    list-style: none;
+    top: 80px;
+    left: 0;
+    width: 240px;
+    height: calc(100vh - 80px);
+    background: #f7f7f7;
+    border-right: 2px solid #f4f3f1;
+    padding: 20px;
+    overflow-y: none;
+}
+
+#navbar section {
+    margin-bottom: 10vh;
+    margin-right: 20;
+}
+
+.nav-head {
+    color: black;
+    border: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.nav-head:hover,
+.nav-head:focus {
+    background-color: #03A9F4;
+    border: 1px solid #03a9ff;
+    color: white;
+    display: block;
+}
+
+#navbar a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-head.active{
+    background-color: #03A9F4;
+    border: 1px solid #03a9ff;
+    color: white;
+    display: block;
+}
+
+
+
+.content {
+    display: none;
+    margin-top: 20px;
+}
+
+.content a{
+    color: black;
+}
+
+section:focus-within .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* main content */
+
+.main-content {
+    margin-top: 80px;
+    margin-left: 240px;
+    padding: 30px;
+    min-height: calc(100vh - 80px);
+}
+
+#disp{
+    display: flex;
+    padding-top: 5vh;
+    padding-left: 5vh;
+    width: 175vh;
+    height: 35vh;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px black;
+    font-size: 20px;
+}
+
+#Account-overview{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vh;
+}
+
+.overview{
+    margin-top: 20px;
+    
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #03A9F4 0% 60%,   /* Used */
+        #e0e0e0 60% 100% /* Remaining */
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Inner white circle */
+#limit-chart{
+    display: block;
+}
+
+.inner-circle {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Default text */
+.default-text {
+    position: absolute;
+    font-size: 15px;
+}
+
+/* Hidden hover content */
+.hover-text {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font: 10px;
+    color: black;
+}
+
+.max-limit {
+    font-weight: bold;
+    color: #333;
+}
+
+/* 🔥 Hover effect */
+.circle:hover .default-text {
+    display: none;
+}
+
+.circle:hover .hover-text {
+    display: flex;
+}
+
+.limit-text {
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+
+/* footer */
+footer {
+    margin-left: 240px;
+    border-top: 2px solid #f4f3f1;
+    padding: 20px;
+    text-align: center;
+}
+
+#foot a {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#foot a:hover {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+
+@media (max-width: 900px) {
+    #navbar {
+        width: 200px;
+    }
+
+    .main-content,
+    footer {
+        margin-left: 200px;
+    }
+}

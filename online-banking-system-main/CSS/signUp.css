@@ -1,0 +1,97 @@
+@import url("../CSS/home.css");
+fieldset{
+    border-radius:5px;
+    padding:20px;
+    text-align: center;
+    width:800px;
+    margin-top:10vh;
+    margin-left: 20vh;
+}
+form{
+    height:680px;
+    display: flex;
+    justify-content: space-between;   
+}
+
+form img{
+    margin-top: 13.5vh;
+    margin-right: 25vh;
+    width: 100vh;
+    height: 84vh;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+legend{
+    text-transform: uppercase;
+    font-weight:bolder;
+    font-size: 30px;
+    text-align: end;
+    padding:10px
+}
+
+label{
+    display: block;
+    text-align: left;
+    margin-left: 10vh;
+    font-size: 20px;
+}
+
+
+input{
+    height:10px;
+    border-radius:10px;
+    padding:15px;
+    font-size:25px;
+    margin:10px;
+    width:70%;
+}
+input:focus{
+    border:2px solid blue;
+}
+button{
+    height:50px;
+    width: 100px;
+    padding:10px;
+    border-radius:10px;
+    border-style:outset;
+    margin:5px 20px;
+    background-color: #03a9ff;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    height:20px;
+    width:20px;
+}
+
+input[type="checkbox"]:checked{
+    width:20px;
+    transition: width 0.5s;
+}
+
+input[type="email"]:invalid{
+    border:2px solid red;
+}
+input[type="number"]:invalid{
+    border:2px solid red;
+}
+#result{
+    width:100%;
+    color:red;
+    text-decoration: underline;
+}
+span{
+    display: inline-block;
+    margin-top:10px;
+}
+#login{
+    color: red;
+    cursor: pointer;
+}
+.log{
+    font-size: 20px;
+}

@@ -1,0 +1,96 @@
+@import url("./home.css");
+
+form{
+    display: flex;
+    justify-content: space-between;
+}
+
+fieldset{
+    border-radius:5px;
+    border: 1px solid black;
+    border-right: none;
+    padding:30px;
+    background-color: white;
+    text-align: center;
+    width:700px;
+    margin-top: 15vh;
+    margin-left: 30vh;
+}
+
+fieldset:hover{
+    border: 2px solid blue;
+}
+
+form img{
+    margin-top: 19vh;
+    margin-right: 25vh;
+    height: 56vh;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+legend{
+    text-transform: uppercase;
+    font-weight:bolder;
+    font-size: 30px;
+    text-align: end;
+    padding:10px
+}
+input{
+    height:30px;
+    border-radius:10px;
+    padding:20px;
+    font-size:20px;
+    margin:10px;
+    width: 70%;
+}
+input:focus{
+    border:2px solid blue;
+}
+form p{
+    font-size:30px;
+    margin:0px;
+    text-decoration: underline;
+}
+button{
+    height:50px;
+    width: 150px;
+    padding:10px auto;
+    border-radius:20px;
+    border-style: outset;
+    margin:5px 30px;
+    font-size: 20px;
+    background-color: #03a9ff;
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#result{
+    font-size:10px;
+    color:red;
+    font-style:oblique;
+}
+
+#accno:invalid{
+    border:2px solid red;
+}
+input[type="email"]:invalid{
+    border:2px solid red;
+}
+
+.sign{
+    font-size:20px;
+    text-decoration: none;
+    font-style:oblique;
+}
+.bank{
+    padding-top:25px ;
+    font-size: larger;
+}
+#signin{
+color: red;
+text-decoration: none;
+cursor: pointer;
+}
+
+
