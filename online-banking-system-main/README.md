@@ -14,7 +14,7 @@ The core idea of the project is to allow users with minor accounts to upgrade th
 
 ## 👨‍💻 Developed By
 
-**Shubham Giri**
+**Kushal Parkar**
 **Role:** Full-Stack Web Developer (Frontend, Backend & Database)
 
 ---
